@@ -28,6 +28,9 @@ $(call inherit-product, vendor/infinix/hot10/hot10-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
+# IMS
+$(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
@@ -91,6 +94,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend \
     android.hardware.health@2.0
+
+# Telephony
+PRODUCT_PACKAGES += vendor.mediatek.hardware.videotelephony@1.0
 
 # IMS
 PRODUCT_BOOT_JARS += \
