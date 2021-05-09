@@ -613,4 +613,6 @@
     <!-- Screen off delay --> 
     <integer name="config_screen_off_delay">0</integer>
 
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">60</integer>
 </resources>
