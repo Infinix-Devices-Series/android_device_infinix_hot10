@@ -99,6 +99,12 @@
          on the headphone/microphone jack. When false use the older uevent framework. -->
      <bool name="config_useDevInputEventForAudioJack">true</bool>
 
+    <!-- Define Rounded Corner -->
+    <dimen name="rounded_corner_radius_bottom">128.0px</dimen>
+    <dimen name="rounded_corner_radius_bottom_adjustment">46.0px</dimen>
+    <dimen name="rounded_corner_radius_top">144.0px</dimen>
+    <dimen name="rounded_corner_radius_top_adjustment">79.0px</dimen>
+
     <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
     
          This resource is similar to config_maximumScreenDimDuration but the maximum
