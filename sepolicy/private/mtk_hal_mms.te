@@ -16,3 +16,7 @@ binder_call(gmscore_app, mtk_hal_mms)
 binder_call(mtk_hal_mms, gmscore_app)
 
 allow { appdomain -isolated_app }  mtk_hal_mms_hwservice:hwservice_manager find;
+
+# Receive and use open file descriptors inherited from gmscore
+allow mtk_hal_mms gmscore_app:fd use;
+
