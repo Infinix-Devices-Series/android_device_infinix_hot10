@@ -31,6 +31,9 @@ PRODUCT_COPY_FILES += \
 # IMS
 $(call inherit-product, vendor/mediatek/ims/mtk-ims.mk)
 
+# Engineer Mode
+$(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
