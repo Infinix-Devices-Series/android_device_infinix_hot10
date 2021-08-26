@@ -1260,5 +1260,15 @@
 	<permission name="android.permission.USE_RESERVED_DISK"/>
 	<permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
 	<permission name="android.permission.INSTALL_PACKAGES"/>
+
+    <privapp-permissions package="com.mediatek.engineermode">
+	<permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+	<permission name="android.permission.WRITE_APN_SETTINGS"/>
+	<permission name="android.permission.MANAGE_USB"/>
+	<permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+	<permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+	<permission name="android.permission.FORCE_STOP_PACKAGES"/>
+	<permission name="android.permission.MASTER_CLEAR"/>
+	<permission name="android.permission.REAL_GET_TASKS"/>
     </privapp-permissions>
 </permissions>
