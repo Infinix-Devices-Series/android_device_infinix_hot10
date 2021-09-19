@@ -93,6 +93,8 @@ on post-fs-data
     start boot_log_kernel
 
 on property:sys.boot_completed=1
+    # ZRAM
+    swapon_all /vendor/fstab.enableswap
 # Stop the logger service
     stop boot_log
     stop boot_log_crash
