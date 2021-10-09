@@ -1251,4 +1251,14 @@
     <privapp-permissions package="com.android.settings">
 	<permission name="android.permission.RESET_BATTERY_STATS"/>
     </privapp-permissions>
+
+    <privapp-permissions package="com.dot.packageinstaller">
+	<permission name="android.permission.PACKAGE_USAGE_STATS"/>
+	<permission name="android.permission.UPDATE_APP_OPS_STATS"/>
+	<permission name="android.permission.MANAGE_USERS"/>
+	<permission name="android.permission.DELETE_PACKAGES"/>
+	<permission name="android.permission.USE_RESERVED_DISK"/>
+	<permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+	<permission name="android.permission.INSTALL_PACKAGES"/>
+    </privapp-permissions>
 </permissions>
