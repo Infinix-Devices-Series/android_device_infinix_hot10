@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/lineage_hot10.mk
+   $(LOCAL_DIR)/nad_hot10.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_hot10-user \
-    lineage_hot10-userdebug \
-    lineage_hot10-eng
+    nad_hot10-user \
+    nad_hot10-userdebug \
+    nad_hot10-eng

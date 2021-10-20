@@ -88,4 +88,3 @@ persist.dbg.wfc_avail_ovr=1
 
 # Permissions
 ro.control_privapp_permissions=disable
-
