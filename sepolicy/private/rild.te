@@ -6,5 +6,5 @@ define(`system_only', ifelse(target_recovery, `true', , $1))
 system_only(`
   type rild, domain;
   # rild needs to read these props for IMS to work
-  allow rild exported3_default_prop:file r_file_perms;
+ # allow rild exported3_default_prop:file r_file_perms;
 ');
