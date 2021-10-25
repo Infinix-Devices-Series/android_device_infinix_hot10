@@ -170,3 +170,6 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Build Broken
 BUILD_BROKEN_DUP_RULES := true
+
+# Security Patch
+VENDOR_SECURITY_PATCH := 2021-03-05
