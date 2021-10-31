@@ -31,7 +31,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 # Inherit some common Nusantara stuff
-USE_GAPPS ?= true
+USE_GAPPS := true
 USE_PIXEL_CHARGING := true
 TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
