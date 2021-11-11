@@ -32,6 +32,7 @@ $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 USE_PIXEL_CHARGING := true
 
 # Gapps
+USE_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 
