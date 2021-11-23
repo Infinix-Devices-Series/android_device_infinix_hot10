@@ -111,4 +111,9 @@ void vendor_load_properties()
     for (const string &prop : prop_partitions) {
         property_override(string("ro.product.") + prop + string("model"), model);
     }
+
+    // Override config hide sim 3rd props
+    property_override(string("ro.telephony.sim.count"), string("3"));
+    property_override(string("persist.vendor.radio.tsd.multisimmode"), string("2"));
+
 }
