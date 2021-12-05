@@ -37,6 +37,11 @@ $(call inherit-product, vendor/mediatek/ims/mtk-engi.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml
 
+# Boot animation
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libldacBT_dec
@@ -52,7 +57,7 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
-# Dynamic Partitions 
+# Dynamic Partitions
 PRODUCT_EXTRA_VNDK_VERSIONS := 29
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -62,10 +67,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     init.mt6768.rc \
     fstab.mt6768
-
-# DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-Hot10
 
 # Fstab
 PRODUCT_COPY_FILES += \
@@ -114,12 +115,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     WifiOverlay \
     TetheringConfigOverlay
-    
+
 # Vendor overlay
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/vendor-overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION))
 
-# APN
+# APN's
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
 

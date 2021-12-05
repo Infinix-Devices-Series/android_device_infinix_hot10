@@ -14,12 +14,7 @@
 # limitations under the License.
 #
 
-# Boot animation
-TARGET_SCREEN_WIDTH := 1080
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# Inherit from merlin device makefile
+# Inherit from hot10 device makefile
 $(call inherit-product, device/infinix/hot10/device.mk)
 
 # Inherit from those products. Most specific first.

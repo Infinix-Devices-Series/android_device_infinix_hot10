@@ -13,6 +13,8 @@ on init
     mount none /system/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc /vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
 
     # USB-OTG
+    chown system system /sys/class/power_supply/usb/otg_switch
+    chmod 0666 /sys/class/power_supply/usb/otg_switch
     write /sys/class/power_supply/usb/otg_switch 1
 
     # Smart Charging
@@ -22,15 +24,6 @@ on init
     chmod 0666 /sys/class/power_supply/battery/input_suspend
     chmod 0666 /sys/class/power_supply/battery/charging_enabled
     chmod 0666 /sys/class/power_supply/battery/mmi_charging_enable
-
-    # DT2W
-    chown system system /dev/input/event3
-
-on property:persist.sys.hot10.dt2w=0
-    exec /system/bin/sendevent /dev/input/event3 0 1 4
-
-on property:persist.sys.hot10.dt2w=1
-    exec /system/bin/sendevent /dev/input/event3 0 1 5
 
 on fs
     mount_all /vendor/etc/fstab.mt6768 --early
