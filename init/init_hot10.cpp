@@ -117,5 +117,5 @@ void vendor_load_properties()
     property_override(string("persist.vendor.radio.tsd.multisimmode"), string("2"));
     property_override(string("ro.vendor.mtk_external_sim_only_slots"), string("3"));
     property_override(string("persist.radio.multisim.config"), string("dsds"));
-
+    property_override(string("ro.quick_charge_support"), string("1"));
 }
