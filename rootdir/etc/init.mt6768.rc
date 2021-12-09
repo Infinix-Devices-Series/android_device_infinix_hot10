@@ -15,19 +15,6 @@ on init
     # HACK: Disable Keymaster beanpod
     mount none /system/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc /vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc
 
-    # USB-OTG
-    chown system system /sys/class/power_supply/usb/otg_switch
-    chmod 0666 /sys/class/power_supply/usb/otg_switch
-    write /sys/class/power_supply/usb/otg_switch 1
-
-    # Smart Charging
-    chown system system /sys/class/power_supply/battery/input_suspend
-    chown system system /sys/class/power_supply/battery/charging_enabled
-    chown system system /sys/class/power_supply/battery/mmi_charging_enable
-    chmod 0666 /sys/class/power_supply/battery/input_suspend
-    chmod 0666 /sys/class/power_supply/battery/charging_enabled
-    chmod 0666 /sys/class/power_supply/battery/mmi_charging_enable
-
 on fs
     mount_all /vendor/etc/fstab.mt6768 --early
     mount_all /vendor/etc/fstab.mt6768 --late
