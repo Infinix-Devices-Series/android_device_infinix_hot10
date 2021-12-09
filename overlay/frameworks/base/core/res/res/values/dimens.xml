@@ -27,4 +27,11 @@
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">40.0dip</dimen>
 
+    <dimen name="status_bar_height_landscape">28.0dip</dimen>
+
+    <!-- Height of the Quick Settings -->
+    <dimen name="quick_qs_offset_height">40.0dip</dimen>
+
+    <dimen name="quick_qs_total_height">164.0dip</dimen>
+
  </resources>
