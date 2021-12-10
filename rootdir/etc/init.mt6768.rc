@@ -42,7 +42,11 @@ on post-fs-data
     chmod 0666 /dev/video0
     chmod 0666 /dev/video1
 
+# USB-OTG
 on boot
+    chown system system /sys/class/power_supply/usb/otg_switch
+    chmod 0666 /sys/class/power_supply/usb/otg_switch
+    write /sys/class/power_supply/usb/otg_switch 1
 
 # Disable AOSP RIL if MTK RIL is up
 on property:vendor.ril.mtk=1
