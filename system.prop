@@ -22,6 +22,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
    iorapd.perfetto.enable=true \
    iorapd.readahead.enable=true
 
+# Dex2oat
+pm.dexopt.ab-ota=speed-profile
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+ro.sys.fw.dex2oat_thread_count=8
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.image-dex2oat-threads=4
+
 # Display
 debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=1
