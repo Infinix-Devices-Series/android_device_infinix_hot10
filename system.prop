@@ -33,6 +33,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.kb_pad_port_b=1 \
     ro.com.google.ime.corner_key_r=35
 
+# RIL
+persist.sys.fflag.override.settings_provider_model=false
+
 # IPO
 sys.ipo.disable=1
 
