@@ -28,7 +28,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 USE_PIXEL_CHARGING := true
 
 # Gapps
@@ -44,7 +44,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hot10
-PRODUCT_NAME := havoc_hot10
+PRODUCT_NAME := evolution_hot10
 PRODUCT_BRAND := Infinix
 PRODUCT_MODEL := Infinix Hot 10
 PRODUCT_MANUFACTURER := Infinix

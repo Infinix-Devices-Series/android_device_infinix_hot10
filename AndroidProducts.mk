@@ -15,9 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-   $(LOCAL_DIR)/havoc_hot10.mk
+   $(LOCAL_DIR)/evolution_hot10.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_hot10-user \
-    havoc_hot10-userdebug \
-    havoc_hot10-eng
+    evolution_hot10-userdebug
