@@ -118,8 +118,4 @@ void vendor_load_properties()
     property_override(string("ro.vendor.mtk_external_sim_only_slots"), string("3"));
     property_override(string("persist.radio.multisim.config"), string("dsds"));
 
-    // Override Fix Wifi and Bluetooth
-    property_override(string("ro.boot.vendor.overlay.static"), string("false"));
-    property_override(string("vendor.connsys.driver.ready"), string("yes"));
-
 }
