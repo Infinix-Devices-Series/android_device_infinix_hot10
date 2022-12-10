@@ -20,7 +20,8 @@ vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,co
 # Iorap
 PRODUCT_PROPERTY_OVERRIDES += \
    iorapd.perfetto.enable=true \
-   iorapd.readahead.enable=true
+   iorapd.readahead.enable=true \
+   persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # Dex2oat
 pm.dexopt.ab-ota=speed-profile
