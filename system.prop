@@ -17,12 +17,6 @@ persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera,com
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.google.camera,org.pixelexperience.faceunlock
 vendor.camera.aux.packageblacklist=org.telegram.messenger,com.microsoft.teams,com.discord
 
-# Iorap
-PRODUCT_PROPERTY_OVERRIDES += \
-   iorapd.perfetto.enable=true \
-   iorapd.readahead.enable=true \
-   persist.device_config.runtime_native_boot.iorap_readahead_enable=true
-
 # Dex2oat
 pm.dexopt.ab-ota=speed-profile
 dalvik.vm.dex2oat-filter=speed
@@ -126,6 +120,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Iorap
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
+persist.device_config.runtime_native_boot.iorap_readahead_enable=true
 
 # System
 persist.sys.binary_xml=false
